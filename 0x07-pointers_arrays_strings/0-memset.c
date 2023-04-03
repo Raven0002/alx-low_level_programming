@@ -1,22 +1,23 @@
 #include "main.h"
 
 /**
- * _memset - function to set memory to array
+ * _memset - pointer function
+ * @s: a pointer to the array
+ *
+ * @b: the constant byte to be set
+ *
  * @n: number of bytes
- * @s: string
- * @b: constant byte
  *
  * Return: s
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i = O;
+	unsigned int j;
 
-	while (i < n)
+	for (j = 0; j < n; j++)
 	{
-	s[i] = b
-	i++;
+		s[j] = b;
 	}
-
 	return (s);
 }
