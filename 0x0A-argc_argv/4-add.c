@@ -10,29 +10,31 @@
  * Return: 0 on success
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int j;
-	int sum = 0;
+	int i, j, sum = 0;
+	char *flag;
 
-	if (argc == 1)
+	if (argc < 2)
 	{
 		printf("0\n");
 		return (0);
 	}
 
-	for (j = 1; j < argc; j++)
+	for (i = 1; argv[i]; i++)
 	{
-		if (num_check(argv[j]))
-		{
-			sum += atoi(argv[j]);
-		}
-		else
+		j = strtol(argv[i], &flag, 10);
+		if (*flag)
 		{
 			printf("Error\n");
 			return (1);
 		}
+		else
+		{
+			sum += j;
+		}
 	}
 	printf("%d\n", sum);
+
 	return (0);
 }
