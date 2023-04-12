@@ -9,36 +9,46 @@
  * @av: the arguments 
  *
  * Return: result
- */
+*/
 
 char *argstostr(int ac, char **av)
 {
-	char *s;
-	int X = 0, i, j, n = 0;
+	char *n;
+	int i = 0, j, size = 0, x = 0;
 
 	if (ac == 0 || av == NULL)
-	{
 		return (NULL);
-	}
-	for (i = 0; i < ac; i++)
-	{
-		X += _strlen(av[i]);
-	}
-	X += (ac + 1);
-	s = malloc(X * sizeof(char));
-	if (s == NULL)
-	{
-		free(s);
-		return (NULL);
-	}
 
-	for (i = 0; i < ac; i++)
+	while (i < ac)
 	{
-		for (j = 0; j < _strlen(av[i]); j++)
+		j = 0;
+		while (av[i][j])
 		{
-			s[n++] = av[i][j];
+			size++;
+			j++;
 		}
-		s[n++] = '\n';
+		size++;
+		i++;
 	}
-	return (s);
+	n = (char *) malloc((size + 1) * sizeof(char));
+	if (n == NULL)
+		return (NULL);
+
+	i = 0;
+	while (i < ac)
+	{
+		j = 0;
+		while (av[i][j])
+		{
+			n[k] = av[i][j];
+			j++;
+			x++;
+		}
+		n[k] = '\n';
+		i++;
+		x++;
+	}
+	n[x] = '\0';
+
+	return (n);
 }
