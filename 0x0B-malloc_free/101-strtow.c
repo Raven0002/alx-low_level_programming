@@ -17,7 +17,7 @@ char **strtow(char *str)
 	while (*(str + X))
 		X++;
 
-	words = word_check(str);
+	words = word(str);
 	if (words == 0)
 		return (NULL);
 
@@ -51,3 +51,4 @@ char **strtow(char *str)
 	}
 	s[j] = NULL;
 	return (s);
+}
