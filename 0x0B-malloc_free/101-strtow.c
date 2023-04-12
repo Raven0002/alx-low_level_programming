@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "word_check.c"
 
 /**
  * strtow - function that splits a string into words
