@@ -6,7 +6,7 @@
  * argstostr - function concatenates all arguments of your program
  * @ac: argument count
  *
- * @av: the arguments 
+ * @av: the arguments
  *
  * Return: result
 */
