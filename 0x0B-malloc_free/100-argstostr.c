@@ -40,11 +40,11 @@ char *argstostr(int ac, char **av)
 		j = 0;
 		while (av[i][j])
 		{
-			n[k] = av[i][j];
+			n[x] = av[i][j];
 			j++;
 			x++;
 		}
-		n[k] = '\n';
+		n[x] = '\n';
 		i++;
 		x++;
 	}
