@@ -2,7 +2,7 @@
 
 /**
  * malloc_checked -  function allocates memory using malloc
- * @b: size of memory to allocate
+ * @b: unsigned integer 
  *
  * Return: result
  */
@@ -19,4 +19,3 @@ void *malloc_checked(unsigned int b)
 	}
 	return (c);
 }
-
