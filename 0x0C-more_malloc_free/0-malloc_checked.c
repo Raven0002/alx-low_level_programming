@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * *malloc_checked  function that allocates memory using malloc
+ * *malloc_checked - function that allocates memory using malloc
  * @b: unsigned integer
  *
  * Return: none
