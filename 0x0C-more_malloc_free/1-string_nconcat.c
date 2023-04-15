@@ -58,13 +58,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
  * Return: integer
  */
 
-int _strlen(char *string)
+int _strlen(char *s)
 {
 	int i;
+	int length = 0;
 
-	for (i = 0; string[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		;
+		length++;
 	}
-	return (i);
+	return (length);
 }
