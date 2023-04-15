@@ -55,7 +55,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 }
 
 /**
- * _strlen - return string le
+ * _strlen - return the string length
  * @string: string whose length is to be calculated
  *
  * Return: integer
