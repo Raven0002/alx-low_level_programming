@@ -4,7 +4,7 @@
 
 /**
  * print_name - a function that prints a name
- * @name: name 
+ * @name: name
  *
  * @f: function to use
  *
