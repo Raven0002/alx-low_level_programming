@@ -3,8 +3,9 @@
 /**
  * print_numbers - prints numbers followed by a new line
  * @separator: string to print
+ *
  * @n: number of integers
- * 
+ *
  * Return: result
  */
 
