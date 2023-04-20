@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * print_name : a function that prints a name
+ * print_name - a function that prints a name
  * @name : the name to be printed
  *
  * @f : function
