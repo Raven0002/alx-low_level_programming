@@ -1,11 +1,10 @@
 #include "lists.h"
 
 /**
- * before_main - print before main
+ * fn_before_main - prints before main
  */
 
-void before_main(void) __attribute__((constructor));
-
+void __attribute__((constructor)) fn_before_main(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
