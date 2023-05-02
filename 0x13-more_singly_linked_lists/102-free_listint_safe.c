@@ -1,7 +1,5 @@
 #include "lists.h"
 
-void free_h(listp_t **head)
-
 
 /**
  * free_listint_safe - frees linked list
